@@ -1,0 +1,30 @@
+{
+    "name": "milantarami/laravel-api-response-builder",
+    "description": "Helps building nice, normalized and easy to consume Laravel REST API",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "MilanTarami\\ApiResponseBuilder\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Milan Tarami",
+            "email": "milantarami.dev@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "extra": {
+        "laravel": {
+          "providers": [
+            "MilanTarami\\ApiResponseBuilder\\ResponseBuilderServiceProvider"
+          ]
+        }
+      }
+}
