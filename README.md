@@ -1,5 +1,10 @@
 # Laravel API Response Builder
 
+Installation
+```
+composer require milantarami/laravel-api-response-builder
+```
+
 Simple Usage
 ```
 use MilanTarami\ApiResponseBuilder\Facades\ResponseBuilder;
