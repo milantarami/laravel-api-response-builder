@@ -16,12 +16,13 @@
   </head>
   <body>
     <div id="app">Please wait...</div>
+
     <script src="//cdn.jsdelivr.net/npm/docsify-plugin-carbon@1/index.js"></script>
     <script>
       window.$docsify = {
         name: "API Response Builder",
         // logo: '/_media/logo.png',
-        themeColor: "#7209b7",
+        themeColor: "#ff2d20",
         executeScript: true,
         notFoundPage: {
           "/": "_404.md",
@@ -34,56 +35,28 @@
         mergeNavbar: true,
         maxLevel: 4,
         subMaxLevel: 2,
-        search: {
-          noData: {
-            "/": "No results!",
-          },
-          paths: "auto",
-          placeholder: {
-            "/": "Search",
-          },
-        },
-        plugins: [
-        //   DocsifyCarbon.create("CEBI6KQE", "docsifyjsorg"),
-        //   function (hook, vm) {
-        //     hook.beforeEach(function (html) {
-        //       if (/githubusercontent\.com/.test(vm.route.file)) {
-        //         url = vm.route.file
-        //           .replace("raw.githubusercontent.com", "github.com")
-        //           .replace(/\/master/, "/blob/master");
-        //       } else if (/jsdelivr\.net/.test(vm.route.file)) {
-        //         url = vm.route.file
-        //           .replace("cdn.jsdelivr.net/gh", "github.com")
-        //           .replace("@master", "/blob/master");
-        //       } else {
-        //         url =
-        //           "https://github.com/docsifyjs/docsify/blob/develop/docs/" +
-        //           vm.route.file;
-        //       }
-        //       var editHtml = "[:memo: Edit Document](" + url + ")\n";
-        //       return (
-        //         editHtml +
-        //         html +
-        //         "\n\n----\n\n" +
-        //         '<a href="https://docsify.js.org" target="_blank" style="color: inherit; font-weight: normal; text-decoration: none;">Powered by docsify</a>'
-        //       );
-        //     }),
-        //       hook.afterEach(function (html) {
-        //         if (vm.route.path === "/") {
-        //           return html;
-        //         }
-        //         return (
-        //           html +
-        //           '<br/> <i>Vercel</i> has given us a Pro account <br/> <a href="https://vercel.com/?utm_source=docsifyjsdocs" target="_blank"><img src="https://cdn.jsdelivr.net/gh/docsifyjs/docsify/docs/_media/vercel_logo.svg" alt="Vercel" width="100" height="64"></a>'
-        //         );
-        //       });
+        // search: {
+        //   noData: {
+        //     "/": "No results!",
         //   },
-        ],
+        //   paths: "auto",
+        //   placeholder: {
+        //     "/": "Search",
+        //   },
+        // },
+        plugins: [],
+        scrollToTop: {
+          auto: true,
+          text: "⤴",
+          right: 15,
+          bottom: 15,
+          offset: 500,
+        },
       };
     </script>
     <!-- Docsify v4 -->
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+    <script src="//unpkg.com/docsify-scroll-to-top/dist/docsify-scroll-to-top.min.js"></script>
     <script>
       console.log(2333);
     </script>

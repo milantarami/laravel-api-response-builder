@@ -1,3 +1,5 @@
+<div id="getting-started"></div>
+
 ## Installation & Configuration
 
 You can install this package via composer using:
