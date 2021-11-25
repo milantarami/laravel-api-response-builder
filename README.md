@@ -1,29 +1,8 @@
-# Laravel API Response Builder
+![logo](docs/_media/logo.png)
 
-Installation
-```
-composer require milantarami/laravel-api-response-builder
-```
 
-Simple Usage
-```
-use MilanTarami\ApiResponseBuilder\Facades\ResponseBuilder;
+ResponseBuilder is Laravel's helper designed to build nice, normalized and easy to consume REST API JSON responses.
 
-$data = [1, 2, 3, 4];
-return ResponseBuilder::success($data);
+## Documentation
 
-// output
-{
-    success: true,
-    code: 200,
-    message: "OK",
-    data: [
-        "1",
-        "2",
-        "3",
-        "4"
-    ]
-}
-```
-
-wait for more extensive documentation.
+See documentation <a href="https://milantarami.github.io/laravel-api-response-builder">Click Here</a>
