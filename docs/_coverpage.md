@@ -1,12 +1,8 @@
 ![logo](_media/logo.png)
 
-# docsify <small>4.12.1</small>
+# Laravel API Response Builder <small>v 0</small>
 
-> A magical documentation site generator.
+> ResponseBuilder is Laravel's helper designed to build nice, normalized and easy to consume REST API JSON responses.
 
-- Simple and lightweight
-- No statically built html files
-- Multiple themes
-
-[GitHub](https://github.com/docsifyjs/docsify/)
+[GitHub](https://github.com/milantarami/laravel-api-response-builder)
 [Getting Started](#docsify)
