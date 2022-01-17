@@ -73,7 +73,7 @@ class ResponseBuilder
      */
     public function withMessage(string $message, $replace = [], $locale = null)
     {
-        $this->message = trans($message, $replace, $locale ?? config('laravel-api-response-builder.locale') ?? app()->locale());
+        $this->message = trans($message, $replace, $locale ?? config('laravel-api-response-builder.locale') ?? app()->getLocale());
         return $this;
     }
 
