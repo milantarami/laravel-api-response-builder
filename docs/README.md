@@ -34,6 +34,12 @@ For below version need to add alias manually in <code>config/app.php</code>
 ]
 ```
 
+To publish the config file to <code>config/laravel-api-response-builder.php</code> run:
+
+```bash
+php artisan vendor:publish --tag=laravel-api-response-builder-config
+```
+
 ## Example 1
 
 > Simple Usage
