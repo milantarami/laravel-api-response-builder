@@ -117,15 +117,15 @@ class ResponseBuilder
 
         if (!empty($resourceNamespace)) {
             $data =
-            $resource instanceof LengthAwarePaginator ||
-            $resource instanceof Collection
-            ? $resourceNamespace::collection($resource)
-            : $resourceNamespace::make($resource);
+                $resource instanceof LengthAwarePaginator ||
+                $resource instanceof Collection
+                ? $resourceNamespace::collection($resource)
+                : $resourceNamespace::make($resource);
         } else {
             $data =
-            $resource instanceof LengthAwarePaginator
-            ? $resource->items()
-            : $resource;
+                $resource instanceof LengthAwarePaginator
+                ? $resource->items()
+                : $resource;
         }
 
         if ($resource instanceof LengthAwarePaginator) {
