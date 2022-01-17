@@ -110,7 +110,7 @@ return ResponseBuilder::asSuccess()
 
 > Customizing FormRequest JSON Response
 
-    ```bash
+```bash
 
     use  MilanTarami\ApiResponseBuilder\Http\FailedValidation;
 
@@ -136,7 +136,7 @@ return ResponseBuilder::asSuccess()
         }
     }
 
-    ```
+```
 
 ## Exposed Methods
 
@@ -200,7 +200,9 @@ return ResponseBuilder::asSuccess()
         <tr>
             <td>withMessage</td>
             <td>
-                <li>@param <i>string</i> &nbsp;$message</li>
+                <li>@param <i>string</i> &nbsp;$messageOrLocaleKey</li>
+                <li>@param <i>array</i> &nbsp;$replace</li>
+                <li>@param <i>string</i> &nbsp;$locale</li>
             </td>
             <td>
                <li>@return <i>\MilanTarami\ApiResponseBuilder\ResponseBuilder</i> </li>
@@ -261,14 +263,3 @@ return ResponseBuilder::asSuccess()
 </table>
 
 Created By <a href="https://milantarami.com.np/" target="_blank">Milan Tarami</a> with 💖 love
-
-````
-
-```
-
-```
-
-```
-
-```
-````

@@ -2,11 +2,11 @@
 
 namespace MilanTarami\ApiResponseBuilder;
 
-use Illuminate\Support\Arr;
 use Illuminate\Database\Eloquent\Collection;
-use Symfony\Component\HttpFoundation\Response;
 use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Arr;
 use MilanTarami\ApiResponseBuilder\Exception\InvalidArrayArgumentException;
+use Symfony\Component\HttpFoundation\Response;
 
 class ResponseBuilder
 {
@@ -64,14 +64,16 @@ class ResponseBuilder
 
     /**
      *
-     * @param string $message
+     * @param string $message - message to be returned or locale key
+     * @param array $params - params to be passed to the message
+     * @param string $locale - locale to be used
      *
      * @return $this
      *
      */
-    public function withMessage(string $message)
+    public function withMessage(string $message, $replace = [], $locale = null)
     {
-        $this->message = $message;
+        $this->message = trans($message, $replace, $locale ?? config('laravel-api-response-builder.locale') ?? app()->locale());
         return $this;
     }
 
