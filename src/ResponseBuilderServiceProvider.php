@@ -26,6 +26,7 @@ class ResponseBuilderServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->configurePublishing();
     }
 
     /**
