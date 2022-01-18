@@ -2,11 +2,11 @@
 
 namespace MilanTarami\ApiResponseBuilder;
 
-use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Arr;
-use MilanTarami\ApiResponseBuilder\Exception\InvalidArrayArgumentException;
+use Illuminate\Database\Eloquent\Collection;
 use Symfony\Component\HttpFoundation\Response;
+use Illuminate\Pagination\LengthAwarePaginator;
+use MilanTarami\ApiResponseBuilder\Exception\InvalidArrayArgumentException;
 
 class ResponseBuilder
 {
