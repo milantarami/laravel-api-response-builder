@@ -2,13 +2,12 @@
 
 namespace MilanTarami\ApiResponseBuilder\Http;
 
-use Illuminate\Http\Response;
 use Illuminate\Contracts\Validation\Validator;
+use Illuminate\Http\Response;
 use MilanTarami\ApiResponseBuilder\Facades\ResponseBuilder;
 
 trait FailedValidation
 {
-
     /**
      * Handle a failed validation attempt.
      *
