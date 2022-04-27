@@ -5,12 +5,11 @@ use Orchestra\Testbench\TestCase;
 
 class FeatureTest extends TestCase
 {
-
     // When testing inside of a Laravel installation, this is not needed
     protected function getPackageProviders($app)
     {
         return [
-            'MilanTarami\ApiResponseBuilder\ResponseBuilderServiceProvider'
+            'MilanTarami\ApiResponseBuilder\ResponseBuilderServiceProvider',
         ];
     }
 
