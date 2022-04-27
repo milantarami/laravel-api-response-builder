@@ -5,8 +5,7 @@ namespace MilanTarami\ApiResponseBuilder\Facades;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * Class ResponseBuilder
- *
+ * Class ResponseBuilder.
  */
 class ResponseBuilder extends Facade
 {
