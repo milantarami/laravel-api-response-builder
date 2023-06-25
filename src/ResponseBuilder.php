@@ -115,11 +115,11 @@ class ResponseBuilder
 
         if ($resource instanceof LengthAwarePaginator) {
             $this->append('meta', [
-                "total" => $resource->total(),
-                "count" => $resource->count(),
-                "per_page" => $resource->perPage(),
-                "page" => $resource->currentPage(),
-                "total_pages" => $resource->lastPage(),
+                'total' => $resource->total(),
+                'count' => $resource->count(),
+                'per_page' => $resource->perPage(),
+                'page' => $resource->currentPage(),
+                'total_pages' => $resource->lastPage(),
             ]);
         }
 
